@@ -1,0 +1,43 @@
+
+
+<ion-content [fullscreen]="true" >
+ 
+
+  <ion-title  style="padding: 50px 160px 100px 180px; "  >
+    <img src="../../assets/icon/blue_logo.png" alt="anteye">
+  </ion-title>
+<form  style="text-align: center; " #loginForm="ngForm" novalidate>
+<div>
+<div>
+ <ion-input label="client"    [(ngModel)]="loginObj.client"   #client="ngModel"  name="client" label-placement="floating" fill="outline" placeholder="Enter your Client here" shape="round" ></ion-input>
+ <ion-text color="danger">
+
+</ion-text>
+</div>
+ <br>
+ <br>
+ <div>
+ <ion-input label="userName"   [(ngModel)]="loginObj.userName"   #userName="ngModel" label-placement="floating" fill="outline" placeholder="Enter your UserName here" shape="round"  ></ion-input>
+ <ion-text color="danger">
+ 
+</ion-text>
+</div>
+ <br>
+ <br>
+ <div>
+ <ion-input label="Password"    [(ngModel)]="loginObj.password"   #password="ngModel" label-placement="floating" fill="outline" placeholder="Enter your Password here" shape="round"   required></ion-input>
+ <br>
+ <br>
+</div>
+ <ion-button shape="round"   (click)="OnLogin(loginForm)">LogIN</ion-button>
+ <p>forgot password?</p>
+</div>
+
+</form>
+</ion-content>
+
+
+
+
+
+ 
